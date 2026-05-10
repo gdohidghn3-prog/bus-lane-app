@@ -13,12 +13,20 @@
     "preview": {
       "distribution": "internal",
       "channel": "preview",
-      "android": { "buildType": "apk" }
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://bus-lane-api.onrender.com/api/v1",
+        "EXPO_PUBLIC_API_KEY": "e26c6383e9e5defdd8f6a7ff24a9c62efcace1fec748ca91f3f1ab8a1337194b"
+      }
     },
     "production": {
       "channel": "production",
       "android": { "buildType": "app-bundle" },
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://bus-lane-api.onrender.com/api/v1",
+        "EXPO_PUBLIC_API_KEY": "e26c6383e9e5defdd8f6a7ff24a9c62efcace1fec748ca91f3f1ab8a1337194b"
+      }
     }
   },
   "submit": {

@@ -1,0 +1,15 @@
+{
+  "name": "bus-lane-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:mobile": "cd mobile && npm start",
+    "build:backend": "cd backend && npm run build",
+    "test": "cd backend && npm test",
+    "test:watch": "cd backend && npm run test:watch"
+  }
+}

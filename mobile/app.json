@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "버스전용차로",
+    "slug": "bus-lane-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.buslane.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "주행 중 버스전용차로 진입 가능 여부를 실시간으로 판단하기 위해 현재 위치를 사용합니다.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "백그라운드 운전 중에도 버스전용차로 접근 경고를 보내기 위해 위치 정보를 사용합니다.",
+        "NSLocationAlwaysUsageDescription": "백그라운드에서 버스전용차로 접근 경고를 받기 위해 위치 정보를 사용합니다.",
+        "UIBackgroundModes": ["location", "fetch"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.buslane.app",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "POST_NOTIFICATIONS",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "주행 중 버스전용차로 접근 경고를 위해 위치 정보를 사용합니다.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "FILL_AFTER_eas_init"
+      }
+    }
+  }
+}

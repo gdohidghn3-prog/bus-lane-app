@@ -1,0 +1,45 @@
+# 의존성
+node_modules/
+
+# 빌드 산출물
+dist/
+build/
+coverage/
+
+# 환경변수 (절대 커밋 금지)
+.env
+.env.local
+.env.*.local
+
+# 로그
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS 잡파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Expo / EAS
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+google-services.json
+play-service-account.json
+
+# 기타
+.turbo/
+.cache/
+tmp/

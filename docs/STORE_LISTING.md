@@ -91,8 +91,8 @@ mhjin@nkia.co.kr
 
 ## 연락처 정보
 - **이메일**: mhjin@nkia.co.kr
-- **개인정보처리방침 URL**: https://<github-username>.github.io/bus-lane-app/PRIVACY_POLICY
-- **이용약관 URL**: https://<github-username>.github.io/bus-lane-app/TERMS_OF_SERVICE
+- **개인정보처리방침 URL**: https://gdohidghn3-prog.github.io/bus-lane-app/PRIVACY_POLICY
+- **이용약관 URL**: https://gdohidghn3-prog.github.io/bus-lane-app/TERMS_OF_SERVICE
 
 ## 그래픽 자산 요구사항 (체크리스트)
 | 자산 | 요구 사양 | 상태 |

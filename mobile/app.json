@@ -23,6 +23,8 @@
         "NSLocationAlwaysUsageDescription": "백그라운드에서 버스전용차로 접근 경고를 받기 위해 위치 정보를 사용합니다.",
         "UIBackgroundModes": [
           "location",
+          "fetch",
+          "location",
           "fetch"
         ]
       }
@@ -35,6 +37,17 @@
       "package": "com.buslane.app",
       "versionCode": 1,
       "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "POST_NOTIFICATIONS",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION",
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
         "ACCESS_BACKGROUND_LOCATION",
@@ -63,13 +76,20 @@
           "icon": "./assets/notification-icon.png",
           "color": "#ffffff"
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "extra": {
       "eas": {
         "projectId": "783c4d3c-91ba-4e8f-a186-192fcffaad84"
       }
     },
-    "owner": "moononi"
+    "owner": "moononi",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/783c4d3c-91ba-4e8f-a186-192fcffaad84"
+    }
   }
 }
